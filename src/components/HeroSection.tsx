@@ -11,17 +11,17 @@ export const HeroSection = () => {
         bgRepeat='no-repeat'
         bgPosition='50%'
         align='center'
-        lineHeight='50'
+        lineHeight='30'
         m='0 auto'
         h={800}
         w={1280}>
         <Text
           color='gray.50'
-          fontSize='80'
+          fontSize='90'
           fontWeight='500'
           display='inline-block'
           lineHeight='normal'>
-          Apple pie
+          Apple Pie
         </Text>
       </Box>
     </Box>
