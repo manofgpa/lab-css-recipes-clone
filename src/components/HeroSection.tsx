@@ -1,12 +1,17 @@
 import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
 
-export const HeroSection = () => {
+interface HeroSectionProps {
+  name: string
+  image: string
+}
+
+export const HeroSection = ({ name, image }: HeroSectionProps) => {
   return (
     <Box>
       <Box
-        bgImage="linear-gradient(rgba(0, 0, 0, 0.252),rgba(0, 0, 0, 0.5)),
-        url('/apple-pie/apple-pie.jpg')"
+        bgImage={`linear-gradient(rgba(0, 0, 0, 0.252),rgba(0, 0, 0, 0.5)),
+        url(${image})`}
         bgSize='cover'
         bgRepeat='no-repeat'
         bgPosition='50%'
@@ -21,7 +26,7 @@ export const HeroSection = () => {
           fontWeight='500'
           display='inline-block'
           lineHeight='normal'>
-          Apple Pie
+          {name}
         </Text>
       </Box>
     </Box>
