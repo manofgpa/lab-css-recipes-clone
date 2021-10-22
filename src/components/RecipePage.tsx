@@ -28,7 +28,7 @@ interface RecipePageProps {
   data: Recipe[]
 }
 
-export const RecipePage: NextPage = ({ data }: RecipePageProps) => {
+export const RecipePage = ({ data }: RecipePageProps) => {
   return (
     <>
       {data.map(recipe => (
